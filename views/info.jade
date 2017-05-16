@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  #contacts
+    .name Name - #{contact.first_name} #{contact.last_name}
+    a.contact-number(href="/user/" + contact.id + "/otp") Contact #{contact.number}

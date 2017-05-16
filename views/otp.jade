@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  #contacts
+    .name Name - #{contact.first_name} #{contact.last_name}
+    input(type="text", name="text", value="Hi your otp is #{contact.otp}")
